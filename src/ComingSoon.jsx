@@ -69,13 +69,36 @@ const ComingSoon = () => {
               point for the future website.
             </p>
 
-            <div className="feature-pills">
-              <div className="pill pill-accent">
-                <svg width="18" height="18" viewBox="0 0 16 16" fill="none">
-                  <circle cx="8" cy="8" r="7" stroke="currentColor" strokeWidth="2" />
-                </svg>
-                Concrete supply & logistics
-              </div>
+            <div className="contact-cards-compact">
+              <a href="mailto:info@prasannarmc.com" className="contact-card-v4">
+                <div className="card-icon-aside-small">
+                  <div className="icon-glow-compact">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+                      <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+                      <polyline points="22,6 12,13 2,6" />
+                    </svg>
+                  </div>
+                </div>
+                <div className="card-text-compact">
+                  <span className="card-label-v4">EMAIL US</span>
+                  <span className="card-value-v4">info@prasannarmc.com</span>
+                </div>
+              </a>
+
+              <a href="tel:+919341642120" className="contact-card-v4">
+                <div className="card-icon-aside-small">
+                  <div className="icon-glow-compact">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+                      <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
+                    </svg>
+                  </div>
+                </div>
+                <div className="card-text-compact">
+                  <span className="card-label-v4">CALL / WHATSAPP</span>
+                  <span className="card-value-v4">+91 93416 42120</span>
+                  <span className="card-value-v4 small">+91 93426 42120 (WhatsApp)</span>
+                </div>
+              </a>
             </div>
 
             <div className="scroll-indicator">

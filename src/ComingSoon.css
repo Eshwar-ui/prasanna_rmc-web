@@ -164,42 +164,74 @@
   margin-right: auto;
 }
 
-/* Feature Pills */
-.feature-pills {
+/* Compact Horizontal Contact Cards */
+.contact-cards-compact {
   display: flex;
   justify-content: center;
-  gap: 16px;
-  margin-bottom: 48px;
+  gap: 12px; /* Minimal gap */
+  margin-bottom: 32px;
   flex-wrap: wrap;
 }
 
-.pill {
-  display: inline-flex;
-  align-items: center;
-  gap: 12px;
-  padding: 14px 28px;
+.contact-card-v4 {
+  background: linear-gradient(135deg, #FF6B35 0%, #E6441C 100%);
   border-radius: 12px;
-  font-size: 0.95rem;
-  font-weight: 600;
-  transition: all 0.3s ease;
-  cursor: default;
+  padding: 12px 20px; /* Compact padding */
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  text-decoration: none;
+  min-width: 260px; /* Reduced width */
+  max-width: 320px;
+  transition: transform 0.2s ease;
+  box-shadow: 0 6px 15px rgba(230, 68, 28, 0.15);
+  text-align: left;
 }
 
-.pill:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+.contact-card-v4:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(230, 68, 28, 0.25);
 }
 
-.pill-orange {
-  background: rgba(255, 107, 53, 0.12);
-  color: var(--primary-orange);
-  border: 2px solid var(--primary-orange);
+.card-icon-aside-small {
+  flex-shrink: 0;
 }
 
-.pill-accent {
-  background: rgba(251, 191, 36, 0.12);
-  color: var(--primary-orange);
-  border: 2px solid var(--primary-orange);
+.icon-glow-compact {
+  width: 36px; /* Smaller icon container */
+  height: 36px;
+  background: rgba(255, 255, 255, 0.18);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+}
+
+.card-text-compact {
+  display: flex;
+  flex-direction: column;
+}
+
+.card-label-v4 {
+  color: white;
+  font-weight: 800;
+  font-size: 0.75rem; /* Clean, slightly condensed */
+  letter-spacing: 0.04em;
+  line-height: 1.1;
+}
+
+.card-value-v4 {
+  color: white;
+  font-size: 0.95rem; /* Smaller text for compact layout */
+  font-weight: 500;
+  margin-top: 1px;
+}
+
+.card-value-v4.small {
+  font-size: 0.75rem;
+  opacity: 0.85;
 }
 
 .scroll-indicator {
